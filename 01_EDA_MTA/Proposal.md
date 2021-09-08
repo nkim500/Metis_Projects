@@ -23,17 +23,16 @@ WTWY aims to raise attendance at its annual summer gala and concurrently build a
   - Minimum viable product ("MVP"), exemplifying a simplified version of the final deliverable - an analysis of subsample of turnstile traffic data & visuals
   - Final deliverable - recommendation on timing and locations for public engagement, supplemented by exploratory data analyses and visualizations, in (i) slides + 5 minute walkthrough, (ii) writeup, and (iii) code formats
 
+### Expected project timeline
+* Project proposal delivered by 6:00PM EST Wednesday, September 8, 2021
+* MVP will be delivered by 6:00PM EST Tuesday, September 14, 2021
+* Final deliverable will be delivered by 11:00AM EST Friday, September 17, 2021
+
 ### Certain **assumptions** will be made within this deliverable, including but not limited to: 
   1. *Timing of the gala and marketing efforts: early summer is assumed to be either June or July, thus the marketing effort is assumed to take place anytime in the same year prior to the gala*
   2. *Hours for ground presence: New Yorkers are assumed to be less engaging during the time of the day which overlaps with their commute time window*
   3. *Human resource: the number of staff in the street teams is assumed to have no limitations*
   4. ~~*Type of demographic: subway stations in the vicinity of WeWork locations in New York's 5 boroughs is assumed to have higher concentrations of target demographic than otherwise*~~
-
-### Timeline
-* Project proposal delivered by 6:00PM EST Wednesday, September 8, 2021
-* MVP will be delivered by 6:00PM EST Tuesday, September 14, 2021
-* Final deliverable will be delivered by 11:00AM EST Friday, September 17, 2021
-
 
 Should you wish to proceed with this proposal, or have any questions or concerns, please feel free to reach out to Metis. 
 
