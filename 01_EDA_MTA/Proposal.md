@@ -13,7 +13,8 @@ WTWY aims to raise attendance at its annual summer gala and concurrently build a
 ### Project descriptions:
 * **Primary data source:** 
   - MTA subway turnstile data ("MTA data") [published by MTA](http://web.mta.info/developers/turnstile.html)
-  - MTA data is aggregated on a 4-hour basis, featuring aggregated number of exits and entries for each of the turnstile units at various NYC subway stations, then compiled into a weekly datasets
+  - MTA data features aggregated number of exits and entries every 4 hours for each of the turnstile units at various NYC subway stations, then compiled into a weekly datasets
+  - Currently available MTA data spans from the week of May 5, 2010 to the week of September 4, 2021
 * **Data processing and its environment:**
   - SQLite3 and DB Browser to ingest, aggregate and trivially process the raw MTA data, as well as other necessary data, into a workable database format (.db)
   - Python 3 (and its packages such as pandas, NumPy, SQLAlchemy, matplotlib) to clean, process and analyze the data in the .db file(s)
