@@ -14,7 +14,8 @@ WTWY aims to raise attendance at its annual summer gala and concurrently build a
 * **Primary data source:** 
   - The weekly aggregated MTA subway turnstile data ("MTA data") [published by MTA](http://web.mta.info/developers/turnstile.html)
 * **Data processing and its environment:**
-  - Aggregate, processe and analyze MTA data using SQLite3 and Python 3 (and its packages such as pandas, NumPy, SQLAlchemy, matplotlib) 
+  - SQLite3 to ingest and aggregate data from the primary data source, as well as ancillary data needed for this project, into a workable database format (.db)
+  - Python 3 (and its packages such as pandas, NumPy, SQLAlchemy, matplotlib) to clean, process and analyze the data in the .db file(s)
 * **Outline of deliverables:**
   - Project proposal, outliing the scope of work
   - Minimum viable product ("MVP"), exemplifying a simplified version of the final deliverable - an analysis of subsample of turnstile traffic data & visuals
