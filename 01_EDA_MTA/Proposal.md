@@ -8,11 +8,11 @@
 
 ## Project proposal in response to the inquiry regarding analyzing MTA traffic data to support the annual summer WTWY gala promotion 
 
-WTWY aims to raise attendance at its annual summer gala and concurrently build awareness by engaging with target demographics near subway stations. Per your request, we understand the target demographics to be potential attendees of the gala and/or have relevance/influence in increasing participation of women in technology. In light of this, we aim to deliver recommendations outlining the optimal strategy for placement of your street team that maximizes the exposure to your target demographic. 
+WTWY aims to raise attendance at its annual summer gala and concurrently build awareness by engaging with target demographics near subway stations in New York City. Per your request, we understand the target demographics to be potential attendees of the gala and/or have relevance/influence in increasing participation of women in technology. In light of this, we aim to deliver recommendations outlining the optimal strategy for placement of your street team that maximizes the exposure to your target demographic. 
 
 ### Project descriptions:
 * **Primary data source:** 
-  - The weekly aggregated MTA subway turnstile data ("MTA data") published by MTA
+  - The weekly aggregated MTA subway turnstile data ("MTA data") [published by MTA](http://web.mta.info/developers/turnstile.html)
 * **Data processing and its environment:**
   - Aggregate, processe and analyze MTA data using SQLite3 and Python 3 (and its packages such as pandas, NumPy, SQLAlchemy, matplotlib) 
 * **Outline of deliverables:**
