@@ -29,7 +29,7 @@ WTWY aims to raise attendance at its annual summer gala and concurrently build a
 * MVP will be delivered by 6:00PM EST Tuesday, September 14, 2021
 * Final deliverable will be delivered by 11:00AM EST Friday, September 17, 2021
 
-### Certain **assumptions** will be made within this deliverable, including but not limited to: 
+### *Certain **assumptions** will be made within this deliverable, including but not limited to:* 
   1. *Timing of the gala and marketing efforts: early summer is assumed to be either June or July, thus the marketing effort is assumed to be able to take place during any of the months leading up to the gala*
   2. *Hours for ground presence: New Yorkers are assumed to be less willing to engage during the time of the day which overlaps with their commute time window*
   3. ~~*Human resource: the number of staff in the street teams is assumed to have no limitations*~~
