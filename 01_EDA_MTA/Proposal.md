@@ -6,7 +6,7 @@
 **WTWY International ("WTWY")** / 
 **Karrine and Dahlia**
 
-## Proposal in response to your inquiry regarding Metis' engagement to support arranging the ground presence via MTA subway data analysis
+## Project proposal in response to the inquiry regarding analyzing MTA traffic data to support the annual summer WTWY gala promotion 
 
 WTWY aims to raise attendance at its annual summer gala and concurrently build awareness by engaging with target demographics near subway stations. Per your request, we understand the target demographics to be potential attendees of the gala and/or have relevance/influence in increasing participation of women in technology. In light of this, we aim to deliver recommendations outlining the optimal strategy for placement of your street team that maximizes the exposure to your target demographic. 
 
@@ -21,8 +21,8 @@ WTWY aims to raise attendance at its annual summer gala and concurrently build a
   - Final deliverable - recommendation on timing and locations for public engagement, supplemented by exploratory data analyses and visualizations, in (i) slides + 5 minute walkthrough, (ii) writeup, and (iii) code formats
 
 ### Certain **assumptions** will be made within this deliverable, including but not limited to: 
-  1. *Timing of the gala and preceding marketing efforts: early summer is assumed to be either June or July, thus the marketing effort is assumed to take place anytime in the same year prior to the gala*
-  2. *Hours for marketing efforts: New Yorkers are assumed to be less engaging during the time of the day which overlaps with their commute time window*
+  1. *Timing of the gala and marketing efforts: early summer is assumed to be either June or July, thus the marketing effort is assumed to take place anytime in the same year prior to the gala*
+  2. *Hours for ground presence: New Yorkers are assumed to be less engaging during the time of the day which overlaps with their commute time window*
   3. *Human resource: the number of staff in the street teams is assumed to have no limitations*
   4. ~~*Type of demographic: subway stations in the vicinity of WeWork locations in New York's 5 boroughs is assumed to have higher concentrations of target demographic than otherwise*~~
 
