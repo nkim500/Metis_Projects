@@ -1,9 +1,9 @@
 *September 2021*
 
-**Metis**
+**Metis** / 
 **Nick Kim**
 
-**WTWY International**
+**WTWY International** / 
 **Karrine and Dahlia**
 
 ## Proposal in response to your inquiry regarding Metis' engagement to support arranging the ground presence via MTA subway data analysis
