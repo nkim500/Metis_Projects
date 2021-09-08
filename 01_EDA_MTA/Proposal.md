@@ -1,6 +1,7 @@
+*September 2021*
+
 ## Metis
 **Nick Kim**
-*September 2021*
 
 ## WTWY International
 **Karrine and Dahlia**
