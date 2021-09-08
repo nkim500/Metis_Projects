@@ -25,6 +25,8 @@
   4. ~~*Type of demographic: subway stations in the vicinity of WeWork locations in New York's 5 boroughs is assumed to have higher concentrations of target demographic than otherwise*~~
 
 
-Should you have any questions or concerns, please feel free to reach out to Metis. 
+
+
+Should you wish to proceed with this proposal, or have any questions or concerns, please feel free to reach out to Metis. 
 
 
