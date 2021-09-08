@@ -8,7 +8,7 @@
 
 ## Proposal in response to your inquiry regarding Metis' engagement to support arranging the ground presence via MTA subway data analysis
 
-**WomenTechWomenYes ("WTWY")** aims to raise attendance at its annual summer gala and concurrently build awareness by engaging with target demographics near subway stations. Per your request, we understand the target demographics to be potential attendees of the gala and/or have relevance/influence in increasing participation of women in technology. In light of this, we aim to deliver a specific recommendation which outlines the optimal strategy for placement of your street team that maximizes the exposure to your target demographic. 
+**WomenTechWomenYes ("WTWY")** aims to raise attendance at its annual summer gala and concurrently build awareness by engaging with target demographics near subway stations. Per your request, we understand the target demographics to be potential attendees of the gala and/or have relevance/influence in increasing participation of women in technology. In light of this, we aim to deliver recommendations outlining the optimal strategy for placement of your street team that maximizes the exposure to your target demographic. 
 
 ### The specifications of our deliverables would include the following:
 * **Primary data source:** 
