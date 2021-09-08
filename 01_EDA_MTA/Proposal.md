@@ -18,10 +18,10 @@
   - Recommendation on timing and locations for public engagement, supplemented by exploratory data analyses and visualizations
 
 ### Certain **assumptions** will be made within this deliverable, including but not limited to: 
-  *1. Timing of the gala and preceding marketing efforts: early summer is assumed to be either June or July, thus the marketing effort is assumed to take place anytime in the same year prior to the gala*
-  *2. Hours for marketing efforts: New Yorkers are assumed to be less engaging during the time of the day which overlaps with their commute time window*
-  *3. Human resource: the number of staff in the street teams is assumed to have no limitations*
-  ~~*4. Type of demographic: subway stations in the vicinity of WeWork locations in New York's 5 boroughs is assumed to have higher concentrations of target demographic than otherwise*~~
+  1. *Timing of the gala and preceding marketing efforts: early summer is assumed to be either June or July, thus the marketing effort is assumed to take place anytime in the same year prior to the gala*
+  2. *Hours for marketing efforts: New Yorkers are assumed to be less engaging during the time of the day which overlaps with their commute time window*
+  3. *Human resource: the number of staff in the street teams is assumed to have no limitations*
+  4. ~~*Type of demographic: subway stations in the vicinity of WeWork locations in New York's 5 boroughs is assumed to have higher concentrations of target demographic than otherwise*~~
 
 
 
