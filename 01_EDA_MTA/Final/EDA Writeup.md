@@ -21,4 +21,4 @@ Exploratory data analysis techniques are used in this analysis.
 - Seaborn and Matplotlib to visualize
 
 ## Communication
-The findings and recommendations are communicated in a 5-minute presentation, attached [in this repository]. 
+The findings and recommendations are communicated in a 5-minute presentation, attached [in this repository](https://github.com/nkim500/Metis_Projects/blob/1ba73910e9af00ff64a177670f5bcbbb315acb55/01_EDA_MTA/Final/01%20EDA%20-%20MTA.pdf). 
