@@ -10,7 +10,7 @@ NFTs, although traded via different channels, have primary and secondary markets
 - Data:
   - Primary dataset will be scraped and compiled from websites with NFT transaction information, including but not limited to sites such as SuperRare (https://superrare.com/), Foundation (https://foundation.app/), NBA Top Shop (https://nbatopshot.com/), Open Sea (https://opensea.io/), and Coinranking.com (https://coinranking.com/). 
   - Each rows of about 1,000, will represent an individual NFT artwork
-  - Each columns of about 10 or more features, will include latest sale price (the target value), art dimension, art type (e.g. animation, moving, real), days since creation, edition #, secondary transactions information (frequency traded in per days since created, price change in % max, price change in % median), concurrent Ethereum price (at the time of latest sale in US$ and price change in % vs. previous all-time-high price)
+  - Each columns of about 10 or more features, will include latest sale price (the target value), art dimension, art type (e.g. animation, moving, real, abstract, has character/subject), days since creation, edition #, secondary transactions information (frequency traded in per days since created, price change in % max, price change in % median), concurrent Ethereum price (at the time of latest sale in US$ and price change in % vs. previous all-time-high price)
 
 - Algorithms:
   - Exploratory data analysis techniques and visualizations for surveying the datasets
