@@ -1,6 +1,6 @@
 # Project proposal for interpreting the relationship between Non-Fungible Tokens ("NFTs") and their prices
 
-While valuation of artistic assets in general are not standardized in process and in large part from subjectivity, this project aims to find whether there are any features that makes a Non-Fungible Token more expensive than another. 
+While valuation of artistic assets in general are not standardized in process and in large part based on subjectivity, this project aims to find whether there are any features that makes a Non-Fungible Token more expensive than another. 
 
 Non-Fungible Tokens ("NFTs") are [XXXXXXXXXXXXXXXX] and 
 NFTs have gained significant fame recently, as cryptocurrency asset prices reached newer heights, and often in connection with their extravagant price tags. The underlying technology behind NFTs is designed to be able to verify originality of a digital artwork and confirm its rightful owner(s) through records on a distributed ledger. [Some NFT buyers] would argue that this ability imbues value in artworks of NFT format. 
