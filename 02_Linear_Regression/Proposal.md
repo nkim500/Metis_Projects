@@ -4,12 +4,12 @@ While valuation of artistic assets or collectibles in general are not standardiz
 
 Non-Fungible Tokens ("NFTs") are 'digital assets' stored on certain blockchain ledgers such as Ethereum and can be 'minted' as almost anything from short films to virtual cannabis farms. The blockchain ledgers enable verification of product originality and secured record of ownership (in perpetuity, in theory). The underlying technology and general interest in cryptocurrency assets have recently garnered excitement in NFTs as well, specifically around digital arts and sports collectibles, often in connection with their extravagant price tags. 
 
-NFTs have primary and secondary markets where they are bought and sold like any other artworks. The project will attempt to quantify any relationships between valuations of various types of NFTs and their features, if at all, by analyzing recent primary and secondary NFT transaction details from various public sources in the manner described below.
+NFTs have primary and secondary markets where they are bought and sold like any other artworks. This project will attempt to quantify any relationships between valuations of various types of NFTs and their features, if any exist, by analyzing recent primary and secondary NFT transaction details available on these markets and additional sources in the manner described below.
 
 - Data:
   - Primary dataset will be scraped and compiled from websites with NFT transaction information, including but not limited to sites such as SuperRare (https://superrare.com/), Foundation (https://foundation.app/), NBA Top Shop (https://nbatopshot.com/), Open Sea (https://opensea.io/), and Coinranking.com (https://coinranking.com/). 
   - Each rows of about 1,000, will represent an individual NFT artwork
-  - Each columns of about 10 or more features, will include latest sale price (the target value), art dimension, art type (e.g. animation, moving, real, abstract, has character/subject), days since creation, edition #, secondary transactions information (frequency traded in per days since created, max price change in %, median price change in % between transactions), concurrent Ethereum price (at the time of latest sale in US$ and price change in % vs. previous all-time-high price)
+  - Each columns of about 10 or more features, will include latest sale price in Ethereum ("ETH") (the target value), art dimension, art type (e.g. animation, moving, real, abstract, has character/subject), days since creation, edition #, secondary transactions information (frequency traded in per days since created, max price change in %, median price change in % between transactions), concurrent Ethereum price (at the time of latest sale in US$ and price change in % vs. the lowest ETH price since its previous all-time-high price)
 
 - Algorithms:
   - Exploratory data analysis techniques and visualizations for surveying the datasets
