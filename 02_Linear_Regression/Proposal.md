@@ -23,4 +23,4 @@ NFTs, although traded via different channels, have primary and secondary markets
   - Scikit-learn for linear regression model
 
 - Minimum viable product: 
-  - Linear regression model output (e.g. coefficients, R2, etc) and interpretation of such outputs in the context of the target variable
+  - Linear regression model output (e.g. coefficients, R2, etc) using subset of data and interpretation of such outputs in the context of the target variable
