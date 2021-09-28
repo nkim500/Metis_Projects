@@ -1,4 +1,4 @@
-# Analysis of NBA player annual salary and their season production on court
+# Analyzing annual salaries of NBA players and their on-court performance
 
 This project aims to interpret the relationship between NBA players and their on-court production. 
 
