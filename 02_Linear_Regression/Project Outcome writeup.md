@@ -8,7 +8,7 @@ The goal of this project was to create a regression model which can interpret NB
 By finding the most informative set of on-court performance predictor variables and using the appropriate regression model(s), we should be able to understand an athlete's fair value. While the motivation for the project originates from curiosity, the ideal regression model should be able to give actionable information to sports franchise owners and athletes.
 
 ## Data
-The primary data source was ![Basketball-Reference.com](https://www.basketball-reference.com/). The raw dataset consisted of about 2,800 rows and 48 features including the target. 25 of these features were per season on-court performance statistics, 6 of these were awards received by the athlete during the season, 5 of his team's regular season performance, 4 of the team's playoff (if any) performance, and remainder attributed to the player profile. Much of the final set of predictor variables were engineered derivatives of these initial dataset collected. 
+The primary data source was [Basketball-Reference.com](https://www.basketball-reference.com/). The raw dataset consisted of about 2,800 rows and 48 features including the target. 25 of these features were per season on-court performance statistics, 6 of these were awards received by the athlete during the season, 5 of his team's regular season performance, 4 of the team's playoff (if any) performance, and remainder attributed to the player profile. Much of the final set of predictor variables were engineered derivatives of these initial dataset collected. 
 
 ## Algorithms
 Feature engineering includes:
