@@ -8,7 +8,7 @@ Millenials in the prime earning ages, have shown increasing desire to align thei
 * Supplemental data on the funds from Bloomberg
 
 ### Algorithms / Tools:
-* Excel for exploratory analysis 
+* Excel for exploratory data analysis 
 * Tableu for visualization
 
 ### Communication:
