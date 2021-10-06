@@ -1,4 +1,4 @@
-# Proposal for business application: Clustering funds by their characteristics to address growing investor demand for value-investing 
+# Fund clustering to address growing investor demand for value-investing 
 
 ### Overview / Design:
 Millenials in the prime earning ages, have shown increasing desire to align their values with their investment decisions, in turn, changing the financial services industry landsacpe including that of asset management. Numerous funds, along with many other asset classes, have been created to address the growing demand for environmental, social and governance ("ESG") conscious investment options. Given the variety of ESG-conscious investments, with some specifically mandated for value-investing, wealth managers should be able to prescribe an appropriate investment recommendation based on the millenial retail investor's preferences to stay relevant among the competition. The presentation deck for this project will include EDA to give a sense of the available investment options and propose k-means clustering to support investment advisory services.
