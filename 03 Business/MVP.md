@@ -7,7 +7,7 @@ This project aims to help fine-tune opening odds for an online sports betting co
 
 
 
-Opening odds are listed on respective online sports betting venues around the time when fights are announced. The listed odds will change over the course of time depending on new information as well as due to influx of bets, until the fight begins with the closing odds. By having an accurate forecast of the closing odds, an online sports betting company can maximize their revenue potential from each fight.
+Opening odds are listed on respective online sports betting venues around the time when fights are announced. The listed odds will change over the course of time depending on new information as well as due to influx of bets, until the fight begins when the closing odds take effect. By having an accurate forecast of the closing odds, online sports betting companies, or effectively the bookmaker, can maximize their revenue potential from each fight.
 
 When the moneyline reads -110 / +120 for a fighter from the red corner ("Red fighter") vs. one from the blue corner ("Blue fighter"), Red fighter is more favored to win the bout. The odds are implying that if the Red fighter in fact wins the fight, a bet of $110 for Red fighter gets a payout of $100. If the Blue fighter ends up winning the fight, a bet of $100 for the Blue fighter pays out $120. The spread for this particular moneyline would be 230. While this moneyline implies the outcome of the fight can more or less go for either fighters, if the probability of winning is very even, both sides of the moneyline could even have negative readings (e.g. -110 / -105)
 
