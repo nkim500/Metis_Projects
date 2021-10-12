@@ -19,4 +19,4 @@ Many times, either fighter has a relatively similar probability of winning, as y
 
 
 
-The modeling process subsequent to data cleaning and EDA will use fighter profile, their previous records, the same information on the opponent, and other relevant information to forecast the closind moneyline.
+The modeling process subsequent to data cleaning and EDA will use fighter profile, their previous records, the same information on the opponent, and other relevant information to forecast the closing moneyline.
