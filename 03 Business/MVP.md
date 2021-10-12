@@ -1,7 +1,7 @@
 # Exploratory data analysis of UFC fights and betting odds
 
 ### Brief intro
-This project aims to help fine-tune opening odds for an online sports betting company. The dataset contains fight statistics and closing betting odds for UFC fights. UFC has grown in popularity over the years as you can see from the number of fights per annum in the bar chart below:
+This project aims to help fine-tune opening odds for an online sports betting company. The dataset contains fight statistics and closing betting odds for UFC fights. UFC has grown in popularity over the years as you can see from the number of fights per annum in the bar chart below. The continued success of this sport makes UFC an interesting opportunity for online sports betting companies to capitalize on.
 
 ![Image](https://github.com/nkim500/Metis_Projects/blob/main/03%20Business/support/fight_freq_pa.png?raw=true)
 
