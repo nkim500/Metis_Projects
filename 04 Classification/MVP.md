@@ -2,6 +2,8 @@
 
 This project aims to train a classification model to identify and, in the future, predict Ethereum wallets engaged in fraudulent activity. While further analysis is warranted, initial thoughts on cost-benefit analysis leans towards prioritizing recall over precision and accuracy. 
 
+The model output is intended to be used as a cautionary notice (in a manner similar to a black list, but without enforceability) to the blockchain users who will be transacting with the fraudulent wallets as identified by the model. In other words, the users will be referencing this model output but still can transact as needed, thereby instilling user confidence in the blockchain but avoiding potential headlines such as ["A $50 Million Hack Just Showed That the DAO Was All Too Human"](https://www.wired.com/2016/06/50-million-hack-just-showed-dao-human/).
+
 The binary target variable, flag for fraudulent wallet, consists roughly 20% of the raw dataset:
 
 ![Image](https://github.com/nkim500/Metis_Projects/blob/main/04%20Classification/support/pie_flag.png?raw=true)
