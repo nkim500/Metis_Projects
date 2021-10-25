@@ -8,10 +8,10 @@ The binary target variable, the flag for fraudulent wallet marked as '1', consis
 
 ![Image](https://github.com/nkim500/Metis_Projects/blob/main/04%20Classification/support/pie_flag.png?raw=true)
 
-A pairplot on predictor variables, generated for simple visual inspection of these features, did not provide any meaningful insight on data separability. Many of the predictor variables display a right-skewed distribution. The orange hue indicates observations which were flagged as 'fraudulent'. The pairplot can be found [here](https://github.com/nkim500/Metis_Projects/blob/main/04%20Classification/support/pairplot_all.png?raw=true)
+A [pairplot](https://github.com/nkim500/Metis_Projects/blob/main/04%20Classification/support/pairplot_all.png?raw=true) on predictor variables, generated for simple visual inspection of these features, did not provide any meaningful insight on data separability. Many of the predictor variables display a right-skewed distribution. The orange hue indicates observations which were flagged as 'fraudulent'.
 
 
-Other than standard scaling for the purposes of kNN, data was not been preprocessed for the following outputs in baseline modeling. The baseline model metrics are as follows: 
+Other than standard scaling for the purposes of kNN, data was not processed for the following outputs in baseline modeling. The baseline model metrics are as follows: 
 
 * The score for kNN is
   * Training:  93.16%
