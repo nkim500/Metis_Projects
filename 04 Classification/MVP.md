@@ -3,6 +3,7 @@
 This project aims to train a classification model to identify and, in the future, predict Ethereum wallets engaged in fraudulent activity. While further analysis is warranted, initial thoughts on cost-benefit analysis leans towards prioritizing recall over precision and accuracy. 
 
 The binary target variable, flag for fraudulent wallet, consists roughly 20% of the raw dataset:
+
 ![Image](https://github.com/nkim500/Metis_Projects/blob/main/04%20Classification/support/pie_flag.png?raw=true)
 
 A pairplot on predictor variables, generated for simple visual inspection of these features, did not provide any meaningful insight on data separability. Many of the predictor variables display a right-skewed distribution. The orange hue indicates observations which were flagged as '1'. The pairplot can be found [here](https://github.com/nkim500/Metis_Projects/blob/main/04%20Classification/support/pairplot_all.png?raw=true)
