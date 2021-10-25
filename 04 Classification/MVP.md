@@ -42,5 +42,5 @@ Within the remaining timeframe, below items will be visited to improve model eff
 3. Feature engineering, including the wallet's most frequently transacted ERC20 token, which is a categorical feature in a string format
 4. Ensemble methods combining various models 
 
-Lastly, the random forest classifier currently ranks the feature importance as following: 
+Lastly, the random forest classifier ranks the feature importance on the raw dataset as shown below: 
 ![Image](https://github.com/nkim500/Metis_Projects/blob/main/04%20Classification/support/Feature_importance_baseline.png?raw=true)
