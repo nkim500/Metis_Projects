@@ -11,7 +11,7 @@ The binary target variable, the flag for fraudulent wallet marked as '1', consis
 A pairplot on predictor variables, generated for simple visual inspection of these features, did not provide any meaningful insight on data separability. Many of the predictor variables display a right-skewed distribution. The orange hue indicates observations which were flagged as 'fraudulent'. The pairplot can be found [here](https://github.com/nkim500/Metis_Projects/blob/main/04%20Classification/support/pairplot_all.png?raw=true)
 
 
-Other than standard scaling for the purposes of KNN, data has not been preprocessed for the following outputs in baseline modeling. The baseline model metrics are as follows: 
+Other than standard scaling for the purposes of kNN, data was not been preprocessed for the following outputs in baseline modeling. The baseline model metrics are as follows: 
 
 * The score for kNN is
   * Training:  93.16%
@@ -34,12 +34,13 @@ Other than standard scaling for the purposes of KNN, data has not been preproces
   * Precision:  83.38%
   * **Recall:  96.17%**
 
-The initial findings show that the random forest classifier was able to outperform other simple classifier models with a recall around 96% on the validation set. 
+The initial findings show that the random forest classifier was able to outperform other classifiers with a recall around 96% on the validation set. 
 
 Within the remaining timeframe, below items will be visited to improve model effectiveness: 
-1. Ability to generalize
-2. Feature engineering, including the wallet's most frequently transacted ERC20 token, which is a categorical feature in a string format
-3. Ensemble methods combining various models 
+1. Address target variable imbalance
+2. Ability to generalize
+3. Feature engineering, including the wallet's most frequently transacted ERC20 token, which is a categorical feature in a string format
+4. Ensemble methods combining various models 
 
 Lastly, the random forest classifier currently ranks the feature importance as following: 
 ![Image](https://github.com/nkim500/Metis_Projects/blob/main/04%20Classification/support/Feature_importance_baseline.png?raw=true)
