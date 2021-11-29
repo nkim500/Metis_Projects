@@ -4,6 +4,7 @@ This project aims to train a deep learning model to classify MRI images of human
 
 The baseline convolutional neural network, with the structure specified below, was only able to achieve an accuracy of 2%. 
 ![Image](https://raw.githubusercontent.com/nkim500/Metis_Projects/main/06%20Deep%20Learning/support/baseline%20CNN%20summary.png)
+
 Epochs:           20
 Steps per epoch:  25
 
