@@ -1,4 +1,4 @@
-# Brain Tumor Classification with MRI Images and CNN
+# Brain Tumor Classification with CNN on MRI images
 Nick Kim
 
 ## Abstract
