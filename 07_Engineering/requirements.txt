@@ -1,6 +1,5 @@
 pandas
 matplotlib
-math
 numpy
 seaborn
 requests
