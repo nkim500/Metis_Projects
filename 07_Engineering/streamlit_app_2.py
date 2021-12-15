@@ -12,6 +12,7 @@ import numpy as np
 import seaborn as sns
 import requests
 import datetime
+from collections import namedtuple
 
 
 # In[291]:
