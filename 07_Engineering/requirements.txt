@@ -4,4 +4,3 @@ numpy
 seaborn
 requests
 datetime
-csv
