@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[163]:
 
 
 import streamlit as st
@@ -15,16 +14,11 @@ import datetime
 from collections import namedtuple
 
 
-# In[291]:
-
 
 url = "https://raw.githubusercontent.com/nkim500/Metis_Projects/main/07_Engineering/US_stations.csv"
 df = pd.read_csv(url)
 
 station_i = namedtuple("station", "usaf wban station_code st_name country state call latitude longitude elevation begin end forecastlink")
-
-
-# In[322]:
 
 
 stuco = [] 
@@ -48,28 +42,12 @@ for i in range(len(df)):
     stations_us.append(station_i(usaf, wban, station_code, st_name, country, state, call, latitude, longitude, elevation, begin, end, forecastlink))
     idx += 1
 
-
-# In[138]:
-
-
 df_station = pd.DataFrame(stuco, columns=['code', 'state', 'call', 'lat','lon'])
 
-
-# In[137]:
-
-
-# st.map(data.loc[:,['lat', 'lon']])
-
-
-# In[288]:
-
-
 import altair as alt
-# from vega_datasets import data
 
 states = alt.topo_feature('https://cdn.jsdelivr.net/npm/vega-datasets@v1.29.0/data/us-10m.json', 'states')
 
-# US states background
 background = alt.Chart(states).mark_geoshape(
     fill='lightgray',
     stroke='white'
@@ -102,38 +80,14 @@ points = base.mark_point().encode(
 
 background + points + text
 
-
-# In[139]:
-
-
-user_input = st.text_input("Input station code", "2971 KONA")
-
-
-# In[166]:
-
-
-user_input == "3215 PORT"
+user_input = st.text_input("Input station code", "2972 KONA")
 
 def searchstation(user_input):
     for i in stations_us:
         if i.station_code == user_input:
             return i
 
-
-# In[167]:
-
-
 x = searchstation(user_input)
-
-
-# In[168]:
-
-
-x
-
-
-# In[289]:
-
 
 def tw_forecast (x):
 # api is forecastGridData endpoint e.g. 'https://api.weather.gov/gridpoints/EPZ/106,80'; can be called by stations_us.forecastlink
@@ -271,20 +225,4 @@ def generate_charts(station_i):
     print()
 
 
-# In[280]:
-
-
 n_neighbors(x,5)
-
-
-# In[281]:
-
-
-twd
-
-
-# In[282]:
-
-
-# Get address from latitude and longitude
-
