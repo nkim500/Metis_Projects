@@ -1,0 +1,11 @@
+streamlit
+pandas
+matplotlib.pyplot
+math
+numpy
+seaborn
+requests
+datetime
+csv
+collections / namedtuple
+json
