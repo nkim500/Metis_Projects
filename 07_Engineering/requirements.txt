@@ -1,0 +1,10 @@
+pandas
+matplotlib
+math
+numpy
+seaborn
+requests
+datetime
+csv
+collections
+json
