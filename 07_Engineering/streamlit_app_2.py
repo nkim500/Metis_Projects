@@ -55,7 +55,7 @@ background = alt.Chart(states).mark_geoshape(
     stroke='white'
 ).properties(
     title='US weather stations',
-    width=1000,
+    width=2000,
     height=1000
 ).project('albersUsa')
 
