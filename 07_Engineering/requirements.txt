@@ -4,3 +4,4 @@ numpy
 seaborn
 requests
 datetime
+geopy
