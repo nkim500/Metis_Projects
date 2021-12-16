@@ -22,10 +22,10 @@ if choice == "Wind forecast":
     
     st.title("Find wind in your local area")
     
-    col1, col2 = st.columns([0,8])
+    col1, col2 = st.columns([0.1,8])
 
     with col1:
-        st.write("")
+        None
     with col2:
 
         url = "https://raw.githubusercontent.com/nkim500/Metis_Projects/main/07_Engineering/US_stations.csv"
