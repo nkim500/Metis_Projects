@@ -14,7 +14,12 @@ import datetime
 from collections import namedtuple
 
 
+col1, col2, col3 = st.beta_columns([1,6,1])
 
+with col1:
+st.write("")
+
+with col2:
 url = "https://raw.githubusercontent.com/nkim500/Metis_Projects/main/07_Engineering/US_stations.csv"
 df = pd.read_csv(url)
 
@@ -214,8 +219,7 @@ def generate_charts(station_i):
         ax2.set_ylabel("knots")
         ax2.margins(x=0)
         ax3.set_title("Wind direction")
-        c = [[1,1,1,2,2,2,3,3,3]*70][0][:len(twd)]
-        ax3.quiver(X, Y, U, V, scale_units = 'x', headwidth = 4, headlength = 4, headaxislength=4, width=0.001, scale=0.5, pivot='tail', color=c) 
+        ax3.quiver(X, Y, U, V, scale_units = 'x', headwidth = 4, headlength = 4, headaxislength=4, width=0.001, scale=0.5, pivot='tail') 
         ax3.set_xticklabels(twd, rotation=45)
         ax3.get_yaxis().set_visible(False)
         ax3.margins(x=0)
@@ -227,3 +231,7 @@ def generate_charts(station_i):
 
 
 n_neighbors(x,5)
+
+with col3:
+st.write("")
+
