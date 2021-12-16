@@ -214,7 +214,7 @@ def generate_charts(station_i):
         ax2.set_ylabel("knots")
         ax2.margins(x=0)
         ax3.set_title("Wind direction")
-        ax3.quiver(X, Y, U, V, scale_units = 'x', headwidth = 4, headlength = 4, headaxislength=4, width=0.001, scale=0.5, pivot='tail') 
+        ax3.quiver(X, Y, U, V, scale_units = 'x', headwidth = 4, headlength = 4, headaxislength=4, width=0.001, scale=0.5, pivot='tail', cmap='YlGnBu_r') 
         ax3.set_xticklabels(twd, rotation=45)
         ax3.get_yaxis().set_visible(False)
         ax3.margins(x=0)
