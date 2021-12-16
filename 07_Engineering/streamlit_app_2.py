@@ -13,13 +13,6 @@ import datetime
 from collections import namedtuple
 from geopy.geocoders import Nominatim
 
-col1, col2 = st.columns([2,8])
-
-with col1:
-    st.write("test")
-with col2:
-    st.write("")
-    st.write("test2")
     
 st.sidebar.markdown("Navigate to:")
 choice = st.sidebar.selectbox("", ["Wind forecast","Historical"])
@@ -29,7 +22,7 @@ if choice == "Wind forecast":
     
     st.title("Find wind in your local area")
     
-    col1, col2 = st.columns([2,8])
+    col1, col2 = st.columns([0.5,8])
 
     with col1:
         st.write("test")
