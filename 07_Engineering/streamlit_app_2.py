@@ -12,6 +12,7 @@ import requests
 import datetime
 from collections import namedtuple
 from geopy.geocoders import Nominatim
+import altair as alt
 
     
 st.sidebar.markdown("Navigate to:")
@@ -45,6 +46,10 @@ for i in range(len(df)):
 
 df_station = pd.DataFrame(stuco, columns=['code', 'state', 'call', 'lat','lon'])
 
+states = alt.topo_feature('https://cdn.jsdelivr.net/npm/vega-datasets@v1.29.0/data/us-10m.json', 'states')
+
+
+
 if choice == "Wind forecast":
     
     st.title("Find wind in your local area")
@@ -54,11 +59,6 @@ if choice == "Wind forecast":
 #     with col1:
 #         None
     with col2:
-
-        
-        import altair as alt
-
-        states = alt.topo_feature('https://cdn.jsdelivr.net/npm/vega-datasets@v1.29.0/data/us-10m.json', 'states')
 
         background = alt.Chart(states).mark_geoshape(
             fill='lightgray',
