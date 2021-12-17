@@ -17,6 +17,33 @@ from geopy.geocoders import Nominatim
 st.sidebar.markdown("Navigate to:")
 choice = st.sidebar.selectbox("", ["Wind forecast","Historical"])
 
+url = "https://raw.githubusercontent.com/nkim500/Metis_Projects/main/07_Engineering/US_stations.csv"
+df = pd.read_csv(url)
+
+station_i = namedtuple("station", "usaf wban station_code st_name country state call latitude longitude elevation begin end forecastlink")
+
+stuco = [] 
+stations_us = []
+idx = 1
+for i in range(len(df)):
+    stuco.append([str(idx) + " " + str(df["station_code"][i]), df["state"][i], df["call"][i], df["latitude"][i], df["longitude"][i]])
+    usaf = df["usaf"][i]
+    wban = df["wban"][i]
+    station_code = str(idx) + " " + str(df["station_code"][i])
+    st_name = df["st_name"][i]
+    country = df["country"][i]
+    state = df["state"][i]
+    call = df["call"][i]
+    latitude = df["latitude"][i]
+    longitude = df["longitude"][i]
+    elevation = df["elevation"][i]
+    begin = df["begin"][i]
+    end = df["end"][i]
+    forecastlink = df["forecast_api_endpoint"][i]
+    stations_us.append(station_i(usaf, wban, station_code, st_name, country, state, call, latitude, longitude, elevation, begin, end, forecastlink))
+    idx += 1
+
+df_station = pd.DataFrame(stuco, columns=['code', 'state', 'call', 'lat','lon'])
 
 if choice == "Wind forecast":
     
@@ -28,34 +55,7 @@ if choice == "Wind forecast":
 #         None
     with col2:
 
-        url = "https://raw.githubusercontent.com/nkim500/Metis_Projects/main/07_Engineering/US_stations.csv"
-        df = pd.read_csv(url)
-
-        station_i = namedtuple("station", "usaf wban station_code st_name country state call latitude longitude elevation begin end forecastlink")
-
-        stuco = [] 
-        stations_us = []
-        idx = 1
-        for i in range(len(df)):
-            stuco.append([str(idx) + " " + str(df["station_code"][i]), df["state"][i], df["call"][i], df["latitude"][i], df["longitude"][i]])
-            usaf = df["usaf"][i]
-            wban = df["wban"][i]
-            station_code = str(idx) + " " + str(df["station_code"][i])
-            st_name = df["st_name"][i]
-            country = df["country"][i]
-            state = df["state"][i]
-            call = df["call"][i]
-            latitude = df["latitude"][i]
-            longitude = df["longitude"][i]
-            elevation = df["elevation"][i]
-            begin = df["begin"][i]
-            end = df["end"][i]
-            forecastlink = df["forecast_api_endpoint"][i]
-            stations_us.append(station_i(usaf, wban, station_code, st_name, country, state, call, latitude, longitude, elevation, begin, end, forecastlink))
-            idx += 1
-
-        df_station = pd.DataFrame(stuco, columns=['code', 'state', 'call', 'lat','lon'])
-
+        
         import altair as alt
 
         states = alt.topo_feature('https://cdn.jsdelivr.net/npm/vega-datasets@v1.29.0/data/us-10m.json', 'states')
