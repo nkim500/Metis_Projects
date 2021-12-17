@@ -321,8 +321,8 @@ if choice == "Historical":
                           'Gilgo Beach, NY', 'Plumb Beach, Brookyln, NY', 'Hood River, OR', 'South Padre Island, TX'))
     
     if option == 'Crissy Field, San Francisco, CA':
-        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KOAK_avg.svg)")
-        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KOAK_mth.svg)")
+        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KOAK_avg.svg =600x)")
+        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KOAK_mth.svg =600x)")
 
     elif option == 'Key West, FL':
         st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KEYW_avg.svg)")
