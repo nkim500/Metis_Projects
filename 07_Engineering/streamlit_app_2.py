@@ -364,7 +364,7 @@ if choice == "Historical":
 
     elif option == 'Plumb Beach, Brookyln, NY':
         st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/bf524ff8f46c9b077d171a0060d7f2844f269aeb/07_Engineering/support/KJFK_avg.svg)")
-        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/bf524ff8f46c9b077d171a0060d7f2844f269aeb/07_Engineering/support/KFJK_mth.svg)")
+        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/bf524ff8f46c9b077d171a0060d7f2844f269aeb/07_Engineering/support/KJFK_mth.svg)")
 
     elif option == 'Hood River, OR':
         st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/bf524ff8f46c9b077d171a0060d7f2844f269aeb/07_Engineering/support/KDLS_avg.svg)")
