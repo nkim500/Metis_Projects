@@ -253,7 +253,7 @@ if choice == "Wind forecast":
 if choice == "Historical":
     
     st.title("See historical wind trends for known places to kitesurf in the US")
-    col1, col2 = st.columns([0.01,5,1])
+    col1, col2 = st.columns([0.01,5])
 
 #     with col1:
 #         None
