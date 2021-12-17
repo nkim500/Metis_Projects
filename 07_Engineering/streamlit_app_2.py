@@ -321,60 +321,60 @@ if choice == "Historical":
                           'Gilgo Beach, NY', 'Plumb Beach, Brookyln, NY', 'Hood River, OR', 'South Padre Island, TX'))
     
     if option == 'Crissy Field, San Francisco, CA':
-        st.markdown(![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KOAK_avg.svg))
-        st.markdown(![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KOAK_mth.svg))
+        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KOAK_avg.svg)")
+        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KOAK_mth.svg)")
 
     elif option == 'Key West, FL':
-        st.markdown(![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KEYW_avg.svg))
-        st.markdown(![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KEYW_mth.svg))
+        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KEYW_avg.svg)")
+        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KEYW_mth.svg)")
     
     elif option == 'Miami Beach, FL':
-        st.markdown(![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KMIA_avg.svg))
-        st.markdown(![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KMIA_mth.svg))
+        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KMIA_avg.svg)")
+        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KMIA_mth.svg)")
         
     elif option == 'Kailua Bay, Oahu Island, HI':
-        st.markdown(![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/PHKO_avg.svg))
-        st.markdown(![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/PHKO_mth.svg))
+        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/PHKO_avg.svg)")
+        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/PHKO_mth.svg)")
         
     elif option == 'Nantucket, MA':
-        st.markdown(![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KACK_avg.svg))
-        st.markdown(![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KACK_mth.svg))
+        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KACK_avg.svg)")
+        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KACK_mth.svg)")
         
     elif option == 'Muskegon, MI':
-        st.markdown(![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KMKG_avg.svg))
-        st.markdown(![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KMKG_mth.svg))
+        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KMKG_avg.svg)")
+        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KMKG_mth.svg)")
         
     elif option == 'Cape Hatteras, Outerbanks, NC':
-        st.markdown(![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KOAK_avg.svg))
-        st.markdown(![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KOAK_mth.svg))
+        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KOAK_avg.svg)")
+        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KOAK_mth.svg)")
         
     elif option == 'Ocean City, NJ':
-        st.markdown(![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KACY_avg.svg))
-        st.markdown(![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KACY_mth.svg))
+        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KACY_avg.svg)")
+        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KACY_mth.svg)")
         
     elif option == 'Sandy Hook Beach, NJ':
-        st.markdown(![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KBLM_avg.svg))
-        st.markdown(![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KBLM_mth.svg))
+        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KBLM_avg.svg)")
+        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KBLM_mth.svg)")
         
     elif option == 'East Hampton, NY':
-        st.markdown(![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KHTO_avg.svg))
-        st.markdown(![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KHTO_mth.svg))
+        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KHTO_avg.svg)")
+        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KHTO_mth.svg)")
         
     elif option == 'Gilgo Beach, NY':
-        st.markdown(![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KFRG_avg.svg))
-        st.markdown(![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KFRG_mth.svg))
+        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KFRG_avg.svg)")
+        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KFRG_mth.svg)")
         
     elif option == 'Plumb Beach, Brookyln, NY':
-        st.markdown(![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KJFK_avg.svg))
-        st.markdown(![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KFJK_mth.svg))
+        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KJFK_avg.svg)")
+        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KFJK_mth.svg)")
         
     elif option == 'Hood River, OR':
-        st.markdown(![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KDLS_avg.svg))
-        st.markdown(![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KDLS_mth.svg))
+        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KDLS_avg.svg)")
+        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KDLS_mth.svg)")
         
     elif option == 'South Padre Island, TX':
-        st.markdown(![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KPIL_avg.svg))
-        st.markdown(![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KPIL_mth.svg))
+        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KPIL_avg.svg)")
+        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KPIL_mth.svg)")
     
     else:
         st.markdown("Select your location")
