@@ -285,8 +285,8 @@ if choice == "Historical":
         stroke='white'
     ).properties(
         title=alt.TitleParams('Well known kitesurfing locations in the US', fontSize=24),
-        width=600,
-        height=400
+        width=1000,
+        height=750
     ).project('albersUsa')
 
 
