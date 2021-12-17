@@ -89,7 +89,7 @@ if choice == "Wind forecast":
 
         background + points + text
 
-        user_input = st.text_input("Input station code", "2972 KONA")
+        user_input = st.text_input("Input station code", "593 SOUTH")
 
 
         def searchstation(user_input):
