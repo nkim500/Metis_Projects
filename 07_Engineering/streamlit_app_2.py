@@ -253,129 +253,132 @@ if choice == "Wind forecast":
 if choice == "Historical":
     
     st.title("See historical wind trends for known places to kitesurf in the US")
-    
-    
-    
-    call_list = ['KACK','KACY','KBLM','KDLS','KEYW','KFRG','KHSE','KHTO','KJFK','KMIA','KMKG','KOAK','KPIL', 'PHKO']
-    alias_list = ['Nantucket, MA', 'Ocean City, NJ', 'Sandy Hook Beach, NJ', 'Hood River, OR', 'Key West, FL', 'Gilgo Beach, NY',\
-                  'Cape Hatteras, Outerbanks, NC', 'East Hampton, NY', 'Plumb Beach, Brookyln, NY','Miami Beach, FL', \
-                  'Muskegon, MI', 'Crissy Field, San Francisco, CA', 'South Padre Island, TX', 'Kailua Bay, Oahu Island, HI']
-    
-    def searchstation_c(option):
-        for i in stations_us:
-            if i.call == option:
-                return address_gen(i)
-    
-    alias_dict = dict(zip(call_list, alias_list))
-    
-    alias_coord = []
-    
-    def coordfind(x):
-        for i in stations_us:
-            if i.call == x:
-                alias_coord.append([i.latitude, i.longitude, i.call, alias_dict[i.call]])
-    for i in call_list:
-        coordfind(i)
-    
-    df_alias = pd.DataFrame(alias_coord, columns=['lat','lon','call', 'alias'])
-    df_alias.drop_duplicates(subset=['call'], inplace=True)
-    
-    background = alt.Chart(states).mark_geoshape(
-        fill='lightgray',
-        stroke='white'
-    ).properties(
-        title=alt.TitleParams('Well known kitesurfing locations in the US', fontSize=24),
-        width=1000,
-        height=750
-    ).project('albersUsa')
+    col1, col2 = st.columns([0.01,5,1])
+
+#     with col1:
+#         None
+    with col2:
+   
+        call_list = ['KACK','KACY','KBLM','KDLS','KEYW','KFRG','KHSE','KHTO','KJFK','KMIA','KMKG','KOAK','KPIL', 'PHKO']
+        alias_list = ['Nantucket, MA', 'Ocean City, NJ', 'Sandy Hook Beach, NJ', 'Hood River, OR', 'Key West, FL', 'Gilgo Beach, NY',\
+                      'Cape Hatteras, Outerbanks, NC', 'East Hampton, NY', 'Plumb Beach, Brookyln, NY','Miami Beach, FL', \
+                      'Muskegon, MI', 'Crissy Field, San Francisco, CA', 'South Padre Island, TX', 'Kailua Bay, Oahu Island, HI']
+
+        def searchstation_c(option):
+            for i in stations_us:
+                if i.call == option:
+                    return address_gen(i)
+
+        alias_dict = dict(zip(call_list, alias_list))
+
+        alias_coord = []
+
+        def coordfind(x):
+            for i in stations_us:
+                if i.call == x:
+                    alias_coord.append([i.latitude, i.longitude, i.call, alias_dict[i.call]])
+        for i in call_list:
+            coordfind(i)
+
+        df_alias = pd.DataFrame(alias_coord, columns=['lat','lon','call', 'alias'])
+        df_alias.drop_duplicates(subset=['call'], inplace=True)
+
+        background = alt.Chart(states).mark_geoshape(
+            fill='lightgray',
+            stroke='white'
+        ).properties(
+            title=alt.TitleParams('Well known kitesurfing locations in the US', fontSize=24),
+            width=1000,
+            height=750
+        ).project('albersUsa')
 
 
-    # Points and text
-    hover = alt.selection(type='single', on='mouseover', nearest=True,
-                          fields=['lat', 'lon'])
+        # Points and text
+        hover = alt.selection(type='single', on='mouseover', nearest=True,
+                              fields=['lat', 'lon'])
 
-    # selection = alt.selection_interval(bind='scales')
+        # selection = alt.selection_interval(bind='scales')
 
-    base = alt.Chart(df_alias).encode(
-        longitude='lon:Q',
-        latitude='lat:Q',
-    )
+        base = alt.Chart(df_alias).encode(
+            longitude='lon:Q',
+            latitude='lat:Q',
+        )
 
-    text = base.mark_text(dy=-10, align='right', fontSize=18, ).encode(
-        alt.Text('alias', type='nominal'),
-        opacity=alt.condition(~hover, alt.value(0), alt.value(1))
-    )
+        text = base.mark_text(dy=-10, align='right', fontSize=18, ).encode(
+            alt.Text('alias', type='nominal'),
+            opacity=alt.condition(~hover, alt.value(0), alt.value(1))
+        )
 
-    points = base.mark_point().encode(
-        color=alt.value('steelblue'),
-        size=alt.condition(~hover, alt.value(30), alt.value(100))
-    ).add_selection(hover)
+        points = base.mark_point().encode(
+            color=alt.value('steelblue'),
+            size=alt.condition(~hover, alt.value(30), alt.value(100))
+        ).add_selection(hover)
 
-    background + points + text
-    
-    
-    
-    option = st.selectbox("Select a location to see data:",
-                          ('Crissy Field, San Francisco, CA', 'Key West, FL', 'Miami Beach, FL', 'Kailua Bay, Oahu Island, HI', 'Nantucket, MA', \
-                          'Muskegon, MI', 'Cape Hatteras, Outerbanks, NC', 'Ocean City, NJ', 'Sandy Hook Beach, NJ', 'East Hampton, NY', \
-                          'Gilgo Beach, NY', 'Plumb Beach, Brookyln, NY', 'Hood River, OR', 'South Padre Island, TX'))
-    
-    if option == 'Crissy Field, San Francisco, CA':
-        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KOAK_avg.svg =600x)")
-        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KOAK_mth.svg =600x)")
+        background + points + text
 
-    elif option == 'Key West, FL':
-        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KEYW_avg.svg)")
-        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KEYW_mth.svg)")
-    
-    elif option == 'Miami Beach, FL':
-        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KMIA_avg.svg)")
-        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KMIA_mth.svg)")
-        
-    elif option == 'Kailua Bay, Oahu Island, HI':
-        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/PHKO_avg.svg)")
-        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/PHKO_mth.svg)")
-        
-    elif option == 'Nantucket, MA':
-        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KACK_avg.svg)")
-        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KACK_mth.svg)")
-        
-    elif option == 'Muskegon, MI':
-        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KMKG_avg.svg)")
-        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KMKG_mth.svg)")
-        
-    elif option == 'Cape Hatteras, Outerbanks, NC':
-        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KOAK_avg.svg)")
-        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KOAK_mth.svg)")
-        
-    elif option == 'Ocean City, NJ':
-        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KACY_avg.svg)")
-        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KACY_mth.svg)")
-        
-    elif option == 'Sandy Hook Beach, NJ':
-        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KBLM_avg.svg)")
-        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KBLM_mth.svg)")
-        
-    elif option == 'East Hampton, NY':
-        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KHTO_avg.svg)")
-        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KHTO_mth.svg)")
-        
-    elif option == 'Gilgo Beach, NY':
-        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KFRG_avg.svg)")
-        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KFRG_mth.svg)")
-        
-    elif option == 'Plumb Beach, Brookyln, NY':
-        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KJFK_avg.svg)")
-        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KFJK_mth.svg)")
-        
-    elif option == 'Hood River, OR':
-        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KDLS_avg.svg)")
-        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KDLS_mth.svg)")
-        
-    elif option == 'South Padre Island, TX':
-        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KPIL_avg.svg)")
-        st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KPIL_mth.svg)")
-    
-    else:
-        st.markdown("Select your location")
-        
+
+
+        option = st.selectbox("Select a location to see data:",
+                              ('Crissy Field, San Francisco, CA', 'Key West, FL', 'Miami Beach, FL', 'Kailua Bay, Oahu Island, HI', 'Nantucket, MA', \
+                              'Muskegon, MI', 'Cape Hatteras, Outerbanks, NC', 'Ocean City, NJ', 'Sandy Hook Beach, NJ', 'East Hampton, NY', \
+                              'Gilgo Beach, NY', 'Plumb Beach, Brookyln, NY', 'Hood River, OR', 'South Padre Island, TX'))
+
+        if option == 'Crissy Field, San Francisco, CA':
+            st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KOAK_avg.svg =600x)")
+            st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KOAK_mth.svg =600x)")
+
+        elif option == 'Key West, FL':
+            st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KEYW_avg.svg)")
+            st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KEYW_mth.svg)")
+
+        elif option == 'Miami Beach, FL':
+            st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KMIA_avg.svg)")
+            st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KMIA_mth.svg)")
+
+        elif option == 'Kailua Bay, Oahu Island, HI':
+            st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/PHKO_avg.svg)")
+            st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/PHKO_mth.svg)")
+
+        elif option == 'Nantucket, MA':
+            st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KACK_avg.svg)")
+            st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KACK_mth.svg)")
+
+        elif option == 'Muskegon, MI':
+            st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KMKG_avg.svg)")
+            st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KMKG_mth.svg)")
+
+        elif option == 'Cape Hatteras, Outerbanks, NC':
+            st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KOAK_avg.svg)")
+            st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KOAK_mth.svg)")
+
+        elif option == 'Ocean City, NJ':
+            st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KACY_avg.svg)")
+            st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KACY_mth.svg)")
+
+        elif option == 'Sandy Hook Beach, NJ':
+            st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KBLM_avg.svg)")
+            st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KBLM_mth.svg)")
+
+        elif option == 'East Hampton, NY':
+            st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KHTO_avg.svg)")
+            st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KHTO_mth.svg)")
+
+        elif option == 'Gilgo Beach, NY':
+            st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KFRG_avg.svg)")
+            st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KFRG_mth.svg)")
+
+        elif option == 'Plumb Beach, Brookyln, NY':
+            st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KJFK_avg.svg)")
+            st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KFJK_mth.svg)")
+
+        elif option == 'Hood River, OR':
+            st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KDLS_avg.svg)")
+            st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KDLS_mth.svg)")
+
+        elif option == 'South Padre Island, TX':
+            st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KPIL_avg.svg)")
+            st.markdown("![image](https://raw.githubusercontent.com/nkim500/Metis_Projects/cb3b00369c4d8383b060267a38446d6417b47d33/07_Engineering/support/KPIL_mth.svg)")
+
+        else:
+            st.markdown("Select your location")
+
